@@ -1,3 +1,7 @@
+* ul li {
+  list-style: none;
+}
+
 /* nav */
 nav ul {
   display: -webkit-box;
@@ -12,3 +16,9 @@ nav ul {
 }
 
 /* nav */
+/* Hero Section */
+.social-icons {
+  text-align: center;
+}
+
+/* End Of Hero Section */
