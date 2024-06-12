@@ -5,7 +5,6 @@
   font-style: normal;
   background-clip: text;
   font-family: "Archivo Black", sans-serif;
-  background: -webkit-gradient(linear, left top, right top, from(#9662fd), color-stop(30%, #7940eb), to(#271955));
   background: linear-gradient(to right, #9662fd 0%, #7940eb 30%, #271955 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,30 +23,22 @@
 /* nav */
 nav .row {
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 nav img {
   height: 70px;
 }
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 15px;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* nav */
 /* Hero Section */
 .hero-section {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
 }
 .hero-section .col-md-6 {
@@ -69,12 +60,8 @@ nav ul {
   color: rgba(99, 99, 99, 0.9921568627);
 }
 .hero-section .portfolio-info .social-icons {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .hero-section .portfolio-info .social-icons .icon i {
   color: #7651fb;
@@ -92,8 +79,7 @@ nav ul {
   border: 1px solid #7651fb;
 }
 .hero-section .hero-section-img {
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 .hero-section .social-icons {
   text-align: center;
@@ -101,9 +87,7 @@ nav ul {
 
 /* End Of Hero Section */
 .about {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .about h2 {
   font-size: 35px;
@@ -124,9 +108,7 @@ nav ul {
 }
 
 .portfolio-section .portfolio-image {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .portfolio-section .portfolio-image div img {
   width: 100%;
@@ -172,9 +154,7 @@ footer img {
 footer ul {
   padding: 0 10%;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 footer ul li a {
   color: #fff;
@@ -183,9 +163,8 @@ footer ul li a {
 }
 footer .rights-reserved a {
   color: #7940eb;
-  -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 footer .rights-reserved a:hover {
   color: #a38cf5;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -1,25 +1,234 @@
-*{
-    ul{
-        li{
-            list-style: none;
-        }
+// GoogleFonts lInk
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Elymaic&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+Sundanese:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&family=Russo+One&display=swap");
+
+// toolbelt
+$public-color: #7940eb;
+%toolbelt {
+  color: #7651fb;
+  font-weight: 300;
+  font-style: normal;
+  background-clip: text;
+  font-family: "Archivo Black", sans-serif;
+  background: linear-gradient(to right, #9662fd 0%, #7940eb 30%, #271955 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// toolbelt
+
+* {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  ul {
+    li {
+      list-style: none;
     }
+  }
 }
 
 /* nav */
-nav{
-    ul{
-        display: flex;
-        padding: 0 15px;
-        list-style: none;
-        gap: 10%;
-        justify-content: center;
-    }
+nav {
+  .row {
+    margin: 0 auto;
+    align-items: center;
+  }
+  img {
+    height: 70px;
+  }
+  ul {
+    display: flex;
+    padding: 0 15px;
+    list-style: none;
+    justify-content: space-between;
+  }
 }
 /* nav */
 
 /* Hero Section */
-.social-icons{
+.hero-section {
+  align-items: center;
+  margin: 0 auto;
+
+  .col-md-6 {
+    width: 54% !important;
+  }
+
+  .portfolio-info {
+    h1 {
+      letter-spacing: 3px;
+      font-size: 40px;
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      span {
+        @extend %toolbelt;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 20px;
+      color: #636363fd;
+    }
+    .social-icons {
+      justify-content: center;
+      align-items: center;
+      .icon {
+        i {
+          color: #7651fb;
+          padding: 8px;
+          border-radius: 160px;
+          border: 1px solid #7651fb;
+        }
+      }
+    }
+    .about-btn a {
+      width: 100%;
+      display: block;
+      padding: 10px 0;
+      color: #7651fb;
+      border-radius: 160px;
+      text-decoration: none;
+      border: 1px solid #7651fb;
+    }
+  }
+
+  .hero-section-img {
+    transform: rotate(5deg);
+  }
+
+  .social-icons {
     text-align: center;
+  }
 }
 /* End Of Hero Section */
+
+// About Section
+.about {
+  align-items: center;
+
+  h2 {
+    @extend %toolbelt;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .about-img {
+    img {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid $public-color;
+    }
+  }
+}
+// Emd About Section
+
+// My Skills
+.skills {
+  background: #9662fd17;
+  h2 {
+    @extend %toolbelt;
+  }
+  span {
+    @extend %toolbelt;
+  }
+  i {
+    color: $public-color;
+    font-size: 35px;
+  }
+}
+// My Skills
+
+// Portfolio
+.portfolio-section {
+  h2 {
+    @extend %toolbelt;
+  }
+  .portfolio-image {
+    justify-content: space-between;
+
+    div {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// Portfolio
+
+// Contact
+.contact {
+  background: #9662fd17;
+
+  h2 {
+    @extend %toolbelt;
+  }
+
+  form {
+    input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: transparent;
+      border-bottom: 1px solid #0003
+    }
+    textarea{
+        background: transparent;
+        border: 1px solid #0003
+    }
+    label {
+      color: #95999d;
+      padding-left: 13px;
+    }
+    button{
+        border: none;
+        color: #fff;
+        padding: 12px;
+        font-weight: 800;
+        border-radius: 15px;
+        background: $public-color;
+    }
+  }
+}
+// Contact
+
+// Footer
+footer {
+  background: #2b1453;
+  color: #fff;
+  margin: 0;
+
+  img {
+    width: 6%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  ul {
+    padding: 0 10%;
+    text-align: center;
+    justify-content: center;
+
+    li { 
+      a{
+        color: #fff;
+        font-weight: 800;
+        text-decoration: none;
+      }
+    }
+  }
+  .rights-reserved {
+    a {
+      color: $public-color;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #a38cf5;
+    }
+  }
+}
+// Footer
