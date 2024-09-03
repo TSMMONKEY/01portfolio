@@ -311,7 +311,7 @@ nav ul {
 }
 @media (min-width: 768px) {
   .footer__nav ul {
-    padding: 0 0 0 107px;
+    padding: 0 0 0 85px;
   }
 }
 .footer__nav li {
