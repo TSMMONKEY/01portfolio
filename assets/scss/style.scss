@@ -43,6 +43,12 @@ nav {
     list-style: none;
     justify-content: space-between;
   }
+
+  @media (min-width: 992px) {
+    .navbar-toggler{
+      display: none !important;
+    }
+  }
 }
 /* nav */
 
@@ -86,6 +92,7 @@ nav {
   @media (max-width: 992px) {
     font-size: 2rem !important;
   }
+
   @media (min-width: 993px) and (max-width: 1200px) {
     font-size: 2.5rem !important;
   }
@@ -421,3 +428,63 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   transition: all 0.3s ease;
 }
+
+/* Navbar toggler styles */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  position: relative;
+  transition: background-color 0.3s ease;
+
+  &, &::before, &::after {
+    width: 30px;
+    height: 2px;
+    background-color: #000; // Adjust color as needed
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+  }
+
+  & {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+  }
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  .navbar-toggler-icon {
+    background-color: transparent;
+
+    &::before {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+// ... existing styles ...

@@ -41,6 +41,11 @@ nav ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (min-width: 992px) {
+  nav .navbar-toggler {
+    display: none !important;
+  }
+}
 
 /* nav */
 /* Hero Section */
@@ -423,4 +428,59 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+/* Navbar toggler styles */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.navbar-toggler-icon, .navbar-toggler-icon::before, .navbar-toggler-icon::after {
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navbar-toggler-icon {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+.navbar-toggler-icon::after {
+  bottom: -8px;
+}
+
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  background-color: transparent;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon::before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+          transform: translateY(8px) rotate(45deg);
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon::after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(-8px) rotate(-45deg);
 }
